@@ -8,6 +8,6 @@ environment:
 
 stack: go 1.10
 
-hoge:
+install:
   - cd
   - dir
