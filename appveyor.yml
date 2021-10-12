@@ -1,13 +1,15 @@
 ---
 build: false
 
-clone_folder: c:\gopath\src\github.com\hsmtkk/vigilant-telegram
+clone_folder: c:\gopath\src\github.com\hsmtkk\vigilant-telegram
 
 environment:
   GOPATH: c:\gopath
 
-stack: go 1.10
+stack: go 1.17
 
-install:
-  - cd
-  - dir
+build_script:
+  - go build
+
+test_script:
+  - vigilant-telegram.exe
