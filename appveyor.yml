@@ -8,12 +8,6 @@ environment:
 
 stack: go 1.10
 
-debug:
+hoge:
   - cd
   - dir
-
-before_test:
-  - go vet ./...
-
-test_script:
-  - go test ./...
