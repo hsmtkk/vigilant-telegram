@@ -13,3 +13,8 @@ build_script:
 
 test_script:
   - vigilant-telegram.exe
+
+artifacts:
+  - path: vigilant-telegram.exe
+    name: executable
+    type: zip
