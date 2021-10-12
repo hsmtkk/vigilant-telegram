@@ -1,5 +1,5 @@
 ---
-build: off
+build: false
 
 clone_folder: c:\gopath\src\github.com\$username\$project
 
@@ -7,6 +7,10 @@ environment:
   GOPATH: c:\gopath
 
 stack: go 1.10
+
+debug:
+  - cd
+  - dir
 
 before_test:
   - go vet ./...
